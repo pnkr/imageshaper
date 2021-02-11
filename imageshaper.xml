@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="plugin" group="content" method="upgrade">
+	<name>plg_imageshaper</name>
+	<author>Kiriakopoulos Panayiotis</author>
+	<creationDate>December 2019</creationDate>
+	<authorEmail>kiriakopoulos.p@gmail.com</authorEmail>
+	<authorUrl>https://github.com/pnkr/imageshaper</authorUrl>
+	<license>GNU/GPL</license>
+	<version>1.4</version>
+	<description>PLG_CONTENT_IMAGESHAPER_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="imageshaper">imageshaper.php</filename>		
+		<filename>index.html</filename>
+		<folder>languages</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">languages/en-GB.plg_content_imageshaper.ini</language>
+		<language tag="en-GB">languages/en-GB.plg_content_imageshaper.sys.ini</language>
+		<language tag="el-GR">languages/el-GR.plg_content_imageshaper.ini</language>
+		<language tag="el-GR">languages/el-GR.plg_content_imageshaper.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+					<field name="width" type="text" default="" size="8" label="PLG_CONTENT_IMAGESHAPER_WIDTH" description="PLG_CONTENT_IMAGESHAPER_WIDTH_HELP" />
+					<field name="height" type="text" default="" size="8" label="PLG_CONTENT_IMAGESHAPER_HEIGHT" description="PLG_CONTENT_IMAGESHAPER_HEIGHT_HELP" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
